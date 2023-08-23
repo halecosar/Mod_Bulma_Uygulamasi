@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+Scanner scan= new Scanner(System.in);
+    int a,b,c; //integer tipinde 3 tane değer tanımlanmıştır.
+    
+System.out.println("Başlangıç değerini giriniz:");
+    
+    a= scan.nextInt();
+   System.out.println("Bitiş değerini giriniz:");
+
+    b= scan.nextInt();
+    System.out.println("Mod değerini giriniz");
+
+    c= scan.nextInt();
+
+    System.out.println("Hesaplanıyor...");
+    
+    for(int i=a; i<=b; i++){
+      if (i%c==0){
+        System.out.println(i);
+      }
+    }
+    
+ }
+}
